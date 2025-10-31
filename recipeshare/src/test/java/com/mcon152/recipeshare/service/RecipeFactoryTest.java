@@ -42,6 +42,10 @@ class RecipeFactoryTest {
         r = RecipeFactory.createFromRequest(req);
         assertTrue(r instanceof DairyRecipe);
 
+        req.setType("SOUP");
+        r = RecipeFactory.createFromRequest(req);
+        assertTrue(r instanceof SoupRecipe);
+
         req.setType("BASIC");
         r = RecipeFactory.createFromRequest(req);
         assertTrue(r instanceof BasicRecipe);

@@ -19,6 +19,9 @@ public class RecipeFactory {
             case "DAIRY":
                 out = new DairyRecipe();
                 break;
+            case "SOUP":
+                out = new SoupRecipe();
+                break;
             case "BASIC":
             default:
                 out = new BasicRecipe();
